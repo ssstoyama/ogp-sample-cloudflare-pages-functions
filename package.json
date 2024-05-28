@@ -1,0 +1,24 @@
+{
+  "name": "ogp-sample",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "login": "wrangler login",
+    "setup": "wrangler pages project create ogp-sample --production-branch main",
+    "clean": "rm -rf .dist",
+    "dev": "wrangler pages dev",
+    "build": "npm run clean && wrangler pages functions build --outdir=.dist",
+    "deploy": "npm run build && wrangler pages deploy",
+    "destroy": "wrangler pages project delete ogp-sample"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "@cloudflare/pages-plugin-vercel-og": "^0.1.2",
+    "@cloudflare/workers-types": "^4.20240524.0"
+  },
+  "devDependencies": {
+    "typescript": "^5",
+    "wrangler": "^3.57.1"
+  }
+}
