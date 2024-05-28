@@ -4,8 +4,8 @@ import { type PagesFunction } from "@cloudflare/workers-types";
 
 export const onRequest: PagesFunction = async (context) => {
   const url = new URL(context.request.url);
+  const title = url.searchParams.get("title") ?? "OGP SAMPLE";
   const avatar = url.searchParams.get("avatar");
-  const title = "OGP SAMPLE";
   return new ImageResponse(
     (
       <div
