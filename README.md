@@ -1,4 +1,6 @@
-# TITLE
+# @vercel/og と Cloudflare Pages Functions で OGP 画像生成 API をつくる
+
+この[記事](https://zenn.dev/ssstoyama/articles/4b4cfb184891fb)のサンプルリポジトリ
 
 ```bash
 # Pages Functions の動作をローカルで確認
