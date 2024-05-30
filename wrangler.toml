@@ -3,6 +3,6 @@ pages_build_output_dir = ".dist"
 compatibility_date = "2024-05-01"
 
 [dev]
-ip = "127.0.0.1"
+ip = "localhost"
 port = 8088
 local_protocol = "http"
